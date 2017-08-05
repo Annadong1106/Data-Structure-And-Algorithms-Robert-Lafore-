@@ -1,5 +1,9 @@
 package SortingObjects;
 
+/*
+We use the compareTo() method of the String class to perform the comparisons in the insertSort() method.
+*/
+
 public class ArrayInOb
 {
 	private Person[] objectArray;
