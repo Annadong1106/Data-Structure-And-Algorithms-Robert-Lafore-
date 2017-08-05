@@ -1,0 +1,54 @@
+package binarySearch;
+
+public class OrderedApp 
+{
+	public static void main(String[] args)
+	{
+		int maxSize = 100;
+		OrdArray arr = new OrdArray(maxSize);			
+		
+		// insert 10 items
+		arr.insert(77); 
+		arr.insert(99);
+		arr.insert(44);
+		arr.insert(55);
+		arr.insert(22);
+		arr.insert(88);
+		arr.insert(11);
+		arr.insert(00);
+		arr.insert(66);
+		arr.insert(33);	
+		
+		arr.display();
+		
+		int searchKey = 55;
+		if(arr.find(searchKey) == arr.size())
+		{
+			System.out.println("Can't find " + searchKey);		
+		}
+		else
+		{
+			System.out.println("Found " + searchKey);
+		}
+		
+		arr.display();
+		
+		arr.delete(00);
+		arr.delete(55);
+		arr.delete(99);
+		
+		arr.display();
+	}
+}
+/*
+ * 在JDK1.8中输入结果为：
+ * ---------------------------------------
+ * 0  11  22  33  44  55  66  77  88  99  
+   Found 55
+   0  11  22  33  44  55  66  77  88  99  
+   11  22  33  44  66  77  88
+   ---------------------------------------  
+
+ * 
+ * */
+
