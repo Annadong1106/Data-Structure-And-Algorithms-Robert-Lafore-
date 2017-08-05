@@ -1,4 +1,4 @@
-package DelimiterMatchingCheck;
+package StackOfDelimiterMatchingCheck;
 
 public class StackX 
 {
